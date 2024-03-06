@@ -16,6 +16,7 @@
                         <a
                             class="header__nav-link d-flex justify-content-center"
                             href="#"
+                            id="catalog-btn"
                             >Каталог
                             <img
                                 src="@img/dropdown.svg"
@@ -56,11 +57,13 @@
             </div>
         </div>
     </div>
-    <div class="catalog">
-        <div class="container">
-            <div class="catalog__items col-lg-12">
+</header>
+<div class="catalog" id="catalog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                 <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+                    class="catalog__item d-flex justify-content-center align-items-center"
                 >
                     <div class="catalog__item-img col-lg-3 me-lg-3">
                         <img src="@img/icon/catalog/icon-derevo.svg" />
@@ -69,107 +72,142 @@
                         Оборудование для деревообработки
                     </div>
                 </a>
-
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                 <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+                    class="catalog__item d-flex justify-content-center align-items-center"
                 >
                     <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-beton.svg" />
+                        <img src="@img/icon/catalog/icon-derevo.svg" />
                     </div>
                     <div class="catalog__item-text col-lg-9">
-                        Оборудование для производства бетона и бетонных изделий
-                    </div>
-                </a>
-
-                <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
-                >
-                    <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-stroy.svg" />
-                    </div>
-                    <div class="catalog__item-text col-lg-9">
-                        Строительное оборудование
-                    </div>
-                </a>
-
-                <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
-                >
-                    <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-selhoz.svg" />
-                    </div>
-                    <div class="catalog__item-text col-lg-9">
-                        Сельскохозяйственное оборудование
-                    </div>
-                </a>
-
-                <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
-                >
-                    <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-metall.svg" />
-                    </div>
-                    <div class="catalog__item-text col-lg-9">
-                        Оборудование для металлообработки
-                    </div>
-                </a>
-
-                <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
-                >
-                    <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-penourino.svg" />
-                    </div>
-                    <div class="catalog__item-text col-lg-9">
-                        Оборудование для нанесения пенополиуретанового
-                        уплотнения
-                    </div>
-                </a>
-
-                <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
-                >
-                    <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-eztruz.svg" />
-                    </div>
-                    <div class="catalog__item-text col-lg-9">
-                        Экструзионное оборудование
-                    </div>
-                </a>
-
-                <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
-                >
-                    <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-upakovka.svg" />
-                    </div>
-                    <div class="catalog__item-text col-lg-9">
-                        Упаковочное оборудование
-                    </div>
-                </a>
-
-                <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
-                >
-                    <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-food.svg" />
-                    </div>
-                    <div class="catalog__item-text col-lg-9">
-                        Пищевое оборудование
-                    </div>
-                </a>
-
-                <a
-                    class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
-                >
-                    <div class="catalog__item-img col-lg-3 me-lg-3">
-                        <img src="@img/icon/catalog/icon-automat.svg" />
-                    </div>
-                    <div class="catalog__item-text col-lg-9">
-                        Автоматизация производства
+                        Оборудование для деревообработки
                     </div>
                 </a>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <a
+                    class="catalog__item d-flex justify-content-center align-items-center"
+                >
+                    <div class="catalog__item-img col-lg-3 me-lg-3">
+                        <img src="@img/icon/catalog/icon-derevo.svg" />
+                    </div>
+                    <div class="catalog__item-text col-lg-9">
+                        Оборудование для деревообработки
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                <a
+                    class="catalog__item d-flex justify-content-center align-items-center"
+                >
+                    <div class="catalog__item-img col-lg-3 me-lg-3">
+                        <img src="@img/icon/catalog/icon-derevo.svg" />
+                    </div>
+                    <div class="catalog__item-text col-lg-9">
+                        Оборудование для деревообработки
+                    </div>
+                </a>
+            </div>
+
+            <!-- <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-beton.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Оборудование для производства бетона и бетонных изделий
+                </div>
+            </a>
+
+            <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-stroy.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Строительное оборудование
+                </div>
+            </a>
+
+            <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-selhoz.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Сельскохозяйственное оборудование
+                </div>
+            </a>
+
+            <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-metall.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Оборудование для металлообработки
+                </div>
+            </a>
+
+            <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-penourino.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Оборудование для нанесения пенополиуретанового уплотнения
+                </div>
+            </a>
+
+            <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-eztruz.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Экструзионное оборудование
+                </div>
+            </a> -->
+
+            <!-- <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-upakovka.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Упаковочное оборудование
+                </div>
+            </a> -->
+
+            <!-- <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-food.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Пищевое оборудование
+                </div>
+            </a> -->
+
+            <!-- <a
+                class="catalog__item col-lg-3 d-flex justify-content-center align-items-center"
+            >
+                <div class="catalog__item-img col-lg-3 me-lg-3">
+                    <img src="@img/icon/catalog/icon-automat.svg" />
+                </div>
+                <div class="catalog__item-text col-lg-9">
+                    Автоматизация производства
+                </div>
+            </a> -->
         </div>
     </div>
-</header>
+</div>

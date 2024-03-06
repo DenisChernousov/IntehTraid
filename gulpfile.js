@@ -45,6 +45,7 @@ function watcher() {
     gulp.watch(filePaths.watch.static, copy);
     gulp.watch(filePaths.watch.html, html);
     gulp.watch(filePaths.watch.scss, scss);
+    gulp.watch(filePaths.watch.js, js);
     gulp.watch(filePaths.watch.images, images);
     gulp.watch(filePaths.watch.svgIcons, createSvgSprite);
 }
