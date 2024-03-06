@@ -1,0 +1,30 @@
+a {
+    font-family: 'Manrope';
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: $inteh_graphite_black;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.5s ease;
+    &:hover {
+        color: $inteh_green_pine;
+    }
+}
+.btn {
+    border: 2px solid $inteh_emerald;
+    font-weight: 800;
+    font-family: 'Manrope';
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    color: $inteh_graphite_black;
+    background-color: $inteh_white;
+    transition: all 0.5s ease;
+    border-radius: 12px;
+    padding: 16px 40px;
+    &:hover {
+        background-color: $inteh_emerald;
+        color: $inteh_white;
+    }
+}
