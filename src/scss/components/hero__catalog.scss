@@ -1,0 +1,11 @@
+.hero__catalog {
+    margin-top: 64px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    &-inner {
+        padding: 120px 0;
+        border-radius: 24px;
+        background: rgb(246, 246, 249);
+    }
+}
