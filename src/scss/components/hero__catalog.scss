@@ -9,3 +9,30 @@
         background: rgb(246, 246, 249);
     }
 }
+.hero__catalog-item {
+    max-width: 352px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    .hero__catalog-item-prod-icon-hover {
+        display: none;
+    }
+    &:hover {
+        background-color: $inteh_gray_blue;
+        h3 {
+            color: $inteh_emerald;
+        }
+        .hero__catalog-item-arrow-icon img {
+            opacity: 1;
+        }
+        .hero__catalog-item-prod-icon-hover {
+            display: block;
+        }
+        .hero__catalog-item-prod-icon-un {
+            display: none;
+        }
+    }
+    &-arrow-icon img {
+        opacity: 0;
+    }
+}

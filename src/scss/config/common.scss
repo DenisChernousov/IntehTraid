@@ -80,8 +80,10 @@ section {
     line-height: 32px;
     letter-spacing: 0%;
     text-align: left;
-    margin-bottom: 72px;
 }
 .hero__catalog-item {
     background-color: $inteh_white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

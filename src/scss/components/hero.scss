@@ -45,3 +45,126 @@
         max-height: 896px;
     }
 }
+
+.hero__wtf {
+    margin-top: 120px;
+    &-inner {
+        background: url('../../images/bg-wtf2.webp');
+        background-color: $inteh_gray_blue;
+        background-position: center;
+        border-radius: 20px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    &-title {
+        color: $inteh_white;
+        font-family: 'NEXT ART_SemiBold';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &-text {
+        color: $inteh_white;
+        font-family: 'Manrope';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}
+
+.hero__egg {
+    &-title {
+        color: $inteh_graphite_black;
+        font-family: 'NEXT ART_SemiBold';
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 80px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+    &-text {
+        color: $inteh_graphite_black;
+        font-family: 'Manrope';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    &-subtext {
+        color: $inteh_graphite_black;
+        font-family: 'Manrope';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    &-btn {
+        margin-top: 24px;
+    }
+}
+.hero__egg-pravoe {
+    margin-right: -200px;
+}
+.hero__egg-pravoe-text {
+    color: $inteh_graphite_black;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 24px;
+    p {
+        margin-bottom: 16px;
+    }
+}
+.hero__egg-pravoe-img {
+    border-radius: 20px;
+}
+.hero__pokazateli-img-inner {
+    margin-bottom: 88px;
+}
+.hero__pokazateli {
+    margin-top: -100px;
+    &-title {
+        color: $inteh_green_pine;
+        font-family: 'NEXT ART_SemiBold';
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &-text {
+        color: $inteh_graphite_black;
+        font-family: 'Manrope';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+.hero__pokazateli-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 304px;
+    height: 424px;
+    border: 2px solid #ececf3;
+    border-radius: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
