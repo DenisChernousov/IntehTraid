@@ -184,3 +184,35 @@
     text-transform: uppercase;
     -webkit-text-stroke: 2px rgba(255, 255, 255, 0.1);
 }
+.faq__tab-item {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.faq__tab-info {
+    transition: all 0.5s ease;
+    overflow: hidden;
+    height: 0;
+    p {
+        color: rgb(37, 37, 37);
+        font-family: 'Manrope';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+.faq__tab-q {
+    color: rgb(37, 37, 37);
+    font-family: 'NEXT ART_SemiBold';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.faq__tab-open {
+    padding-top: 24px;
+    height: auto;
+}

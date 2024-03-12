@@ -3,7 +3,7 @@ const isTablet = document.documentElement.clientWidth < 1140;
 
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('catalog-btn').onclick = function (event) {
-        event.stopPropagation(); // Остановить всплытие события, чтобы клик на кнопке не срабатывал на внешний обработчик
+        event.stopPropagation();
         document.getElementById('catalog').classList.toggle('catalog-open');
         document.getElementById('dropIconTog').classList.toggle('btn-reverse');
     };
@@ -129,7 +129,7 @@ const produkt = [
         cityStart: 'Шэньчжэнь',
         cityEnd: 'Новосибирск',
         ves: '500 тонн.',
-        cost: '149 500 $',
+        cost: '149 500 $',
         img: 'fanera.webp',
     },
 ];
@@ -201,3 +201,62 @@ const produktItems = produkt.map((item) => {
 
 document.querySelector('.hero__project-items ').innerHTML =
     produktItems.join('');
+
+const partneri = [
+    {
+        logo: '1.svg',
+    },
+    {
+        logo: '2.svg',
+    },
+    {
+        logo: '3.svg',
+    },
+    {
+        logo: '4.svg',
+    },
+    {
+        logo: '5.svg',
+    },
+    {
+        logo: '6.svg',
+    },
+];
+
+const partneriItems = partneri.map((item) => {
+    return `
+    <div class="col-lg-2 p-lg-4"><img src="images/logo/${item.logo}" /></div>
+    `;
+});
+
+document.querySelector('.partneri__inner').innerHTML = partneriItems.join('');
+
+const partneri2 = [
+    {
+        logo: '11.svg',
+    },
+    {
+        logo: '22.svg',
+    },
+    {
+        logo: '33.svg',
+    },
+    {
+        logo: '44.svg',
+    },
+    {
+        logo: '55.svg',
+    },
+    {
+        logo: '66.svg',
+    },
+];
+
+const partneri2Items = partneri2.map((item) => {
+    return `
+    <div class="col-lg-2 p-lg-4"><img src="images/logo/${item.logo}" /></div>
+    `;
+});
+
+document.querySelector('.partneri__inner-2').innerHTML =
+    partneri2Items.join('');
