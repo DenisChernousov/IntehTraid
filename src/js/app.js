@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //////////////////////// это верстальщетские скрипты, что бы не плодить портянки
 
+//Верстка #1
 const catalog = [
     {
         title: 'Оборудование для деревообработки',
@@ -100,3 +101,103 @@ const catalogItems = catalog.map((item) => {
 
 document.querySelector('.hero__catalog-items ').innerHTML =
     catalogItems.join('');
+
+//Верстка #2
+
+const produkt = [
+    {
+        name: 'Станок для выпрямления и резки арматуры модели GT5-14B ',
+        day: '46 дней',
+        cityStart: 'Гуанчжоу',
+        cityEnd: 'Омск',
+        ves: '250 кг.',
+        cost: '40 500$',
+        img: 'gt514b.webp',
+    },
+    {
+        name: 'Запуск машины для полировки меха модели GI-30',
+        day: '52 дня',
+        cityStart: 'Гуанчжоу',
+        cityEnd: 'Киров',
+        ves: '600 кг.',
+        cost: '64 700$',
+        img: 'gi30.webp',
+    },
+    {
+        name: 'Запуск линии по производству фанеры',
+        day: '96 дней',
+        cityStart: 'Шэньчжэнь',
+        cityEnd: 'Новосибирск',
+        ves: '500 тонн.',
+        cost: '149 500 $',
+        img: 'fanera.webp',
+    },
+];
+
+const produktItems = produkt.map((item) => {
+    return `
+    <div
+    class="hero__project-item mb-lg-5 col-lg-12 p-lg-4 d-flex flex-wrap justify-content-between"
+>
+    <div
+        class="hero__project-descr col-lg-5 col-md-12 col-sm-12 d-flex flex-column justify-content-center"
+    >
+        <div class="hero__project-name mb-lg-4 col-lg-12">
+            <p>
+                ${item.name}
+            </p>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-between">
+            <div
+                class="hero__project-long-box col-lg-12 d-flex justify-content-between align-items-center"
+            >
+                <img src="images/icon/start_pin.svg" />
+                <img
+                    class="hero__project-long-box-img"
+                    src="images/icon/dash-line.svg"
+                    alt=""
+                />
+                <span class="hero__project-long">  ${item.day}</span>
+                <img src="images/icon/end_pin.svg" />
+            </div>
+        </div>
+        <div
+            class="hero__project-city col-lg-12 d-flex justify-content-between"
+        >
+            <span>  ${item.cityStart}</span><span>  ${item.cityEnd}</span>
+        </div>
+        <div
+            class="col-lg-12 my-lg-4 d-flex justify-content-between"
+        >
+            <div
+                class="hero__project-param col me-lg-1 d-flex justify-content-between"
+            >
+                <span>Вес груза:</span>
+                <span>  ${item.ves}</span>
+            </div>
+            <div
+                class="hero__project-param ms-lg-1 col d-flex justify-content-between"
+            >
+                <span>Стоимость:</span>
+                <span>  ${item.cost}</span>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-start">
+            <a href="#" class="btn-transparent">Подробнее</a>
+        </div>
+    </div>
+    <div
+        class="col-lg-5 offset-lg-2 offset-md-0 offset-sm-0 col-md-12 col-sm-12 d-flex justify-content-end"
+    >
+        <img
+            class="hero__project-img"
+            src="images/hero/product/${item.img}"
+            alt=""
+        />
+    </div>
+</div>
+    `;
+});
+
+document.querySelector('.hero__project-items ').innerHTML =
+    produktItems.join('');
