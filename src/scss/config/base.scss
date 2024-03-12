@@ -10,6 +10,7 @@ ul {
 html,
 body {
     overflow-x: hidden;
+    font-family: 'Manrope';
 }
 
 body {
@@ -17,7 +18,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
-    background-color: $inteh_white;
+    background-color: $white;
+    color: $black;
 }
 
 img {
@@ -32,35 +34,64 @@ a {
 .main {
     flex-grow: 1;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'NEXT ART_SemiBold';
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
-// .container {
-//     //windscreen//
-//     max-width: #{$desktop + 'px'};
-//     width: 100%;
-//     padding: 0 15px;
-//     margin: 0 auto;
-// }
+h1,
+.h1 {
+    font-size: 50px;
+    line-height: 64px;
+}
+h2,
+.h2 {
+    font-size: 46px;
+    line-height: 64px;
+}
+h3,
+.h3 {
+    font-size: 36px;
+    line-height: 48px;
+}
+h4,
+.h4 {
+    font-size: 26px;
+    line-height: 40px;
+}
+h5,
+.h5 {
+    font-size: 26px;
+    line-height: 32px;
+}
 
-// @include media($desktop) {
-//     .container {
-//         max-width: #{$small-desktop + 'px'};
-//     }
-// }
-
-// @include media($small-desktop) {
-//     .container {
-//         max-width: #{$laptop + 'px'};
-//     }
-// }
-
-// @include media($laptop) {
-//     .container {
-//         max-width: #{$tablet + 'px'};
-//     }
-// }
-
-// @include media($tablet) {
-//     .container {
-//         max-width: #{$mobile + 'px'};
-//     }
-// }
+input {
+    box-sizing: border-box;
+    border: 2px solid rgb(236, 236, 243);
+    border-radius: 12px;
+    background: rgb(246, 246, 249);
+    color: rgb(146, 152, 166);
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    &:hover {
+        border: 2px solid #9298a6;
+        background-color: $gray-white;
+    }
+    &:focus {
+        color: $black;
+        border: 2px solid rgb(146, 152, 166);
+    }
+}
+.input--alert {
+    color: $black;
+    border: 2px solid rgb(235, 87, 87);
+    background: rgb(249, 240, 240);
+}

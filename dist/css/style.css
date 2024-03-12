@@ -60,7 +60,7 @@
   font-family: NEXT ART_SemiBold;
   font-display: swap;
   src: url("../fonts/NEXT ART_SemiBold.woff2") format("woff2"), url("../fonts/NEXT ART_SemiBold.woff") format("woff");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
@@ -4347,6 +4347,7 @@ ul {
 html,
 body {
   overflow-x: hidden;
+  font-family: "Manrope";
 }
 
 body {
@@ -4354,7 +4355,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  color: #252525;
 }
 
 img {
@@ -4368,6 +4370,73 @@ a {
 
 .main {
   flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "NEXT ART_SemiBold";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1,
+.h1 {
+  font-size: 50px;
+  line-height: 64px;
+}
+
+h2,
+.h2 {
+  font-size: 46px;
+  line-height: 64px;
+}
+
+h3,
+.h3 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h4,
+.h4 {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+h5,
+.h5 {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+input {
+  box-sizing: border-box;
+  border: 2px solid rgb(236, 236, 243);
+  border-radius: 12px;
+  background: rgb(246, 246, 249);
+  color: rgb(146, 152, 166);
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+input:hover {
+  border: 2px solid #9298a6;
+  background-color: #f6f6f9;
+}
+input:focus {
+  color: #252525;
+  border: 2px solid rgb(146, 152, 166);
+}
+
+.input--alert {
+  color: #252525;
+  border: 2px solid rgb(235, 87, 87);
+  background: rgb(249, 240, 240);
 }
 
 /** БЕМ блоки используемые во всё проекте */
@@ -4389,35 +4458,14 @@ a:hover {
   margin: 0 auto;
 }
 
-.btn {
-  border: 2px solid #3BC069;
-  font-weight: 800;
-  font-family: "Manrope";
-  font-size: 16px;
-  text-decoration: none;
-  cursor: pointer;
-  color: #252525;
-  background-color: #FFFFFF;
-  transition: all 0.5s ease;
-  border-radius: 12px;
-  padding: 16px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn:hover {
-  background-color: #3BC069;
-  color: #FFFFFF;
-}
-
 .btn-transparent {
-  border: 2px solid #3BC069;
+  border: 2px solid #3bc069;
   font-weight: 800;
   font-family: "Manrope";
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   transition: all 0.5s ease;
   border-radius: 12px;
@@ -4427,12 +4475,12 @@ a:hover {
   align-items: center;
 }
 .btn-transparent:hover {
-  background-color: #3BC069;
-  color: #FFFFFF;
+  background-color: #3bc069;
+  color: #ffffff;
 }
 
 .btn-green {
-  border: 2px solid #3BC069;
+  border: 2px solid #3bc069;
   font-family: Manrope;
   font-size: 18px;
   font-weight: 600;
@@ -4440,8 +4488,8 @@ a:hover {
   letter-spacing: 0%;
   text-align: center;
   cursor: pointer;
-  color: #FFFFFF;
-  background-color: #3BC069;
+  color: #ffffff;
+  background-color: #3bc069;
   transition: all 0.5s ease;
   border-radius: 12px;
   padding: 16px 40px;
@@ -4451,10 +4499,10 @@ a:hover {
   align-items: center;
 }
 .btn-green:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 20px 56px -8px rgba(3, 108, 75, 0.32);
-  background-color: #3BC069;
+  background-color: #3bc069;
 }
 
 section {
@@ -4482,22 +4530,60 @@ section {
 }
 
 .hero__catalog-item {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: green;
+  color: white;
+}
+
+.btn--graphite {
+  background-color: graphite;
+  color: white;
+}
+
+.btn--white {
+  background-color: white;
+  color: black;
+}
+
+.btn--small {
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 12px 28px;
+}
+
+.btn--medium {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 14px 36px;
+}
+
+.btn--large {
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 16px 48px;
 }
 
 /** Подключение стилей отдельных блоков и секций */
 .header {
   position: fixed;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 4;
 }
 .header__inner {
   padding: 16px 0;
-  border-bottom: 1px solid #F6F6F9;
+  border-bottom: 1px solid #f6f6f9;
   max-height: 114.5px;
 }
 .header__nav {
@@ -4519,7 +4605,7 @@ section {
   padding-bottom: 80px;
   position: fixed;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition: opacity 0.5s ease;
   transform: translateY(-200%);
   opacity: 0;
@@ -4533,7 +4619,7 @@ section {
   gap: 32px;
 }
 .catalog__item {
-  border: 2px solid #ECECF3;
+  border: 2px solid #ececf3;
   border-radius: 20px;
   padding: 16px 22px;
   font-weight: 700;
@@ -4542,7 +4628,7 @@ section {
 }
 .catalog__item::after {
   content: "";
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: absolute;
   left: -2px;
   top: 50%;
@@ -4556,7 +4642,7 @@ section {
 }
 
 .catalog__item-text {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 3;
 }
 
@@ -4588,7 +4674,7 @@ body {
   position: relative;
 }
 .hero__text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Manrope;
   font-size: 20px;
   font-weight: 600;
@@ -4597,7 +4683,7 @@ body {
 }
 .hero__title {
   font-family: "NEXT ART_SemiBold";
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 64px;
   font-weight: 600;
   line-height: 72px;
@@ -4607,7 +4693,7 @@ body {
   margin-top: 25%;
 }
 .hero__kavichki {
-  color: #3BC069;
+  color: #3bc069;
 }
 
 .bg-video {
@@ -4628,14 +4714,14 @@ body {
 }
 .hero__wtf-inner {
   background: url("../../images/bg-wtf2.webp");
-  background-color: #282D3A;
+  background-color: #282d3a;
   background-position: center;
   border-radius: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 .hero__wtf-title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "NEXT ART_SemiBold";
   font-size: 36px;
   font-weight: 400;
@@ -4645,7 +4731,7 @@ body {
   text-transform: uppercase;
 }
 .hero__wtf-text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
@@ -4751,7 +4837,7 @@ body {
 }
 
 .hero__project {
-  background-color: #282D3A;
+  background-color: #282d3a;
 }
 
 .hero__stroka {
@@ -4780,10 +4866,10 @@ body {
   display: none;
 }
 .hero__catalog-item:hover {
-  background-color: #282D3A;
+  background-color: #282d3a;
 }
 .hero__catalog-item:hover h3 {
-  color: #3BC069;
+  color: #3bc069;
 }
 .hero__catalog-item:hover .hero__catalog-item-arrow-icon img {
   opacity: 1;
@@ -4881,14 +4967,14 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .hero__project-item:hover .hero__project-name {
-  color: #3BC069;
+  color: #3bc069;
 }
 .hero__project-item:hover .hero__project-param {
   background: rgb(40, 45, 58);
 }
 
 .hero__project-title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "NEXT ART_SemiBold";
   font-size: 46px;
   font-weight: 600;
@@ -4901,7 +4987,7 @@ body {
 .hero__project-long {
   padding: 4px 16px 4px 16px;
   border-radius: 80px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 32px;
   display: flex;
   align-items: center;
@@ -4928,7 +5014,7 @@ body {
   line-height: 76%;
   text-align: left;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px #3BC069;
+  -webkit-text-stroke: 2px #3bc069;
 }
 .hero__num-cifri::after {
   content: "";

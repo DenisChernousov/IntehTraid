@@ -14,26 +14,26 @@ a {
 .container {
     margin: 0 auto;
 }
-.btn {
-    border: 2px solid $inteh_emerald;
-    font-weight: 800;
-    font-family: 'Manrope';
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-    color: $inteh_graphite_black;
-    background-color: $inteh_white;
-    transition: all 0.5s ease;
-    border-radius: 12px;
-    padding: 16px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-        background-color: $inteh_emerald;
-        color: $inteh_white;
-    }
-}
+// .btn {
+//     border: 2px solid $inteh_emerald;
+//     font-weight: 800;
+//     font-family: 'Manrope';
+//     font-size: 16px;
+//     text-decoration: none;
+//     cursor: pointer;
+//     color: $inteh_graphite_black;
+//     background-color: $inteh_white;
+//     transition: all 0.5s ease;
+//     border-radius: 12px;
+//     padding: 16px 40px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     &:hover {
+//         background-color: $inteh_emerald;
+//         color: $inteh_white;
+//     }
+// }
 .btn-transparent {
     border: 2px solid $inteh_emerald;
     font-weight: 800;
@@ -106,4 +106,38 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn--green {
+    background-color: green;
+    color: white;
+}
+.btn--graphite {
+    background-color: graphite;
+    color: white;
+}
+.btn--white {
+    background-color: white;
+    color: black;
+}
+
+.btn--small {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 12px 28px;
+}
+.btn--medium {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 14px 36px;
+}
+.btn--large {
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 16px 48px;
 }
