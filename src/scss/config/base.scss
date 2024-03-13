@@ -20,6 +20,7 @@ body {
     overflow-y: hidden;
     background-color: $white;
     color: $black;
+    line-height: 24px;
 }
 
 img {
@@ -30,7 +31,10 @@ img {
 a {
     cursor: pointer;
 }
-
+p {
+    display: inline-block;
+    line-height: 24px;
+}
 .main {
     flex-grow: 1;
 }
@@ -89,9 +93,4 @@ input {
         color: $black;
         border: 2px solid rgb(146, 152, 166);
     }
-}
-.input--alert {
-    color: $black;
-    border: 2px solid rgb(235, 87, 87);
-    background: rgb(249, 240, 240);
 }

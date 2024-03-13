@@ -202,34 +202,34 @@ const produktItems = produkt.map((item) => {
 document.querySelector('.hero__project-items ').innerHTML =
     produktItems.join('');
 
-const partneri = [
-    {
-        logo: '1.svg',
-    },
-    {
-        logo: '2.svg',
-    },
-    {
-        logo: '3.svg',
-    },
-    {
-        logo: '4.svg',
-    },
-    {
-        logo: '5.svg',
-    },
-    {
-        logo: '6.svg',
-    },
-];
+// const partneri = [
+//     {
+//         logo: '1.svg',
+//     },
+//     {
+//         logo: '2.svg',
+//     },
+//     {
+//         logo: '3.svg',
+//     },
+//     {
+//         logo: '4.svg',
+//     },
+//     {
+//         logo: '5.svg',
+//     },
+//     {
+//         logo: '6.svg',
+//     },
+// ];
 
-const partneriItems = partneri.map((item) => {
-    return `
-    <div class="col-lg-2 p-lg-4"><img src="images/logo/${item.logo}" /></div>
-    `;
-});
+// const partneriItems = partneri.map((item) => {
+//     return `
+//     <div class="col-lg-2 p-lg-4"><img src="images/logo/${item.logo}" /></div>
+//     `;
+// });
 
-document.querySelector('.partneri__inner').innerHTML = partneriItems.join('');
+// document.querySelector('.partneri__inner').innerHTML = partneriItems.join('');
 
 const partneri2 = [
     {
@@ -254,9 +254,47 @@ const partneri2 = [
 
 const partneri2Items = partneri2.map((item) => {
     return `
-    <div class="col-lg-2 p-lg-4"><img src="images/logo/${item.logo}" /></div>
+    <div class="swiper-slide">
+    <div class="col-lg-2 p-lg-4 "><img src="images/logo/${item.logo}" /></div></div>
     `;
 });
 
 document.querySelector('.partneri__inner-2').innerHTML =
     partneri2Items.join('');
+
+const faqTabItems = document.querySelectorAll('.faq__tab-item');
+
+faqTabItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        const faqTabInfo = item.querySelector('.faq__tab-info');
+        faqTabInfo.classList.toggle('faq__tab-open');
+    });
+});
+
+var swiper = new Swiper('.running-line', {
+    centeredSlides: true,
+    slidesPerView: '4',
+    spaceBetween: 0,
+    simulateTouch: false,
+    loop: true,
+    speed: 2000,
+    autoplay: {
+        delay: 0,
+        reverseDirection: true,
+        disableOnInteraction: true,
+    },
+});
+
+var swiper2 = new Swiper('.running-line-2', {
+    centeredSlides: true,
+    slidesPerView: '3',
+    spaceBetween: 0,
+    simulateTouch: false,
+    loop: true,
+    speed: 2000,
+    autoplay: {
+        delay: 0,
+        reverseDirection: true,
+        disableOnInteraction: true,
+    },
+});

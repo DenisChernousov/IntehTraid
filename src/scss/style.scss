@@ -13,10 +13,11 @@
 
 //@import 'libs/normalize';
 @import 'libs/reset';
+@import 'libs/swiper';
 @import 'libs/bootstrap-grid';
 /** Общие параметры, шаблоны(заготовки) и вспомогательные классы */
 @import 'config/base';
-
+@import 'config/atom';
 /** БЕМ блоки используемые во всё проекте */
 @import 'config/common';
 
