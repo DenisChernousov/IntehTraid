@@ -19,7 +19,7 @@
 }
 
 .btn--stroke {
-    background-color: $white;
+    background-color: transparent;
     color: $black;
     border: 2px solid $emerald;
     transition: background-color 0.3s ease;
@@ -69,16 +69,41 @@
 .mb-160 {
     margin-bottom: 160px;
 }
-
+.fs-14 {
+    font-size: 14px !important;
+}
 .fs-16 {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 .fs-20 {
-    font-size: 20px;
+    font-size: 20px !important;
 }
 .fs-20b {
-    font-size: 20px;
+    font-size: 20px !important;
     font-weight: 700;
+}
+.fw-700 {
+    font-weight: 700 !important;
+}
+.fw-500 {
+    font-weight: 500 !important;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fs-22b {
+    font-size: 22px !important;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.br-24 {
+    border-radius: 24px;
+}
+.mx-16 {
+    margin: 0 16px;
 }
 .running-line {
     width: 100%;
