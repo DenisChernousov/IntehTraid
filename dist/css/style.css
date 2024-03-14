@@ -5237,8 +5237,16 @@ input:focus {
   color: #9298a6 !important;
 }
 
+.stroke-green {
+  -webkit-text-stroke: 2px #048159;
+}
+
 .bg-black {
   background-color: #252525;
+}
+
+.bg-noise {
+  background: url("../../images/noise.png"), #282d3a;
 }
 
 .fs-14 {
@@ -5353,6 +5361,10 @@ input:focus {
 
 .mx-16 {
   margin: 0 16px;
+}
+
+.mb--16 {
+  margin-bottom: -45px;
 }
 
 .br-24 {
@@ -5499,6 +5511,16 @@ section {
   font-size: 20px;
   line-height: 1.6;
   padding: 16px 48px;
+}
+
+.running-line {
+  width: 100%;
+  height: 150px;
+}
+
+.running-line-2 {
+  width: 100%;
+  height: 150px;
 }
 
 /** Подключение стилей отдельных блоков и секций */
@@ -5941,13 +5963,13 @@ body {
   line-height: 76%;
   text-align: left;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px #3bc069;
+  -webkit-text-stroke: 2px #048159;
 }
 .hero__num-cifri::after {
   content: "";
   position: absolute;
   filter: blur(64px);
-  background: rgb(4, 129, 89);
+  background: #048159;
   width: 55px;
   height: 55px;
   bottom: 15%;
