@@ -1,3 +1,28 @@
 .hero__stroka {
-    margin-top: 144px;
+}
+
+.running-line {
+}
+
+.running-line__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.catalog__item-img {
+    width: 80px !important;
+}
+.running-line__wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    -webkit-animation-iteration-count: infinite !important;
+    animation-iteration-count: infinite !important;
+}
+
+.running-line__wrapper .swiper-slide {
+    width: auto;
 }
