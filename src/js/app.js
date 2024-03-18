@@ -40,42 +40,42 @@ const catalog = [
     },
     {
         title: 'Строительное оборудование',
-        icon: 'icon-derevo.svg',
+        icon: 'icon-stroy.svg',
     },
     {
         title: 'Сельскохозяйственное оборудование',
-        icon: 'icon-derevo.svg',
+        icon: 'icon-selhoz.svg',
     },
     {
         title: 'Оборудование для металлообработки',
-        icon: 'icon-derevo.svg',
+        icon: 'icon-metall.svg',
     },
     {
         title: 'Оборудование для нанесения пенополиуретанового уплотнения',
-        icon: 'icon-derevo.svg',
+        icon: 'icon-penourino.svg',
     },
     {
         title: 'Экструзионное оборудование',
-        icon: 'icon-derevo.svg',
+        icon: 'icon-eztruz.svg',
     },
     {
         title: 'Упаковочное оборудование',
-        icon: 'icon-derevo.svg',
+        icon: 'icon-upakovka.svg',
     },
     {
         title: 'Пищевое оборудование',
-        icon: 'icon-derevo.svg',
+        icon: 'icon-food.svg',
     },
     {
         title: 'Автоматизация производства',
-        icon: 'icon-derevo.svg',
+        icon: 'icon-automat.svg',
     },
 ];
 
 const catalogItems = catalog.map((item) => {
     return `<a href="#" class="hero__catalog-item  p-lg-3 py-lg-4 me-lg-4  mb-lg-4 col-lg-3 "> 
                       <div class="col-lg-12">
-                          <h3 class="hero__catalog-text col-lg-7">
+                          <h3 class="hero__catalog-text tt-none col-lg-7">
                               ${item.title}
                           </h3>
                       </div>
@@ -198,3 +198,5 @@ const produktItems = produkt.map((item) => {
 </div>
     `;
 });
+document.querySelector('.hero__project-items ').innerHTML =
+    produktItems.join('');

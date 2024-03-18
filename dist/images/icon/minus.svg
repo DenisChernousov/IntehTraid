@@ -1,0 +1,13 @@
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip613_622">
+			<rect id="Icons / Minus" width="32.000000" height="32.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip613_622)">
+		<path id="line" d="M1 15L31 15L31 17L1 17L1 15Z" fill="#252525" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

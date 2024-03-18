@@ -1,9 +1,3 @@
-.hero__stroka {
-}
-
-.running-line {
-}
-
 .running-line__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -23,6 +17,20 @@
     animation-iteration-count: infinite !important;
 }
 
+.running-line-2__wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    -webkit-animation-iteration-count: infinite !important;
+    animation-iteration-count: infinite !important;
+}
 .running-line__wrapper .swiper-slide {
+    width: auto;
+}
+
+.running-line__wrapper .swiper-slide {
+    width: auto;
+}
+.running-line-2__wrapper .swiper-slide {
     width: auto;
 }
