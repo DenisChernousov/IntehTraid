@@ -1,0 +1,10 @@
+<svg width="866.000000" height="25.000000" viewBox="0 0 866 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<g opacity="0.320000">
+		<rect id="stroke" width="864.000000" height="24.000000" transform="translate(1.000000 1.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<path id="stroke" d="M0 25L0 21C0 15.2 2.05 10.25 6.15 6.15C10.25 2.05 15.2 0 21 0L845 0C850.79 0 855.74 2.05 859.84 6.15C863.95 10.25 866 15.2 866 21L866 25L864 25L864 21C864 15.75 862.14 11.27 858.43 7.56C854.72 3.85 850.24 2 845 2L21 2C15.75 2 11.27 3.85 7.56 7.56C3.85 11.27 2 15.75 2 21L2 25L0 25Z" fill="#048159" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

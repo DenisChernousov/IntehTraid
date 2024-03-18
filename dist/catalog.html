@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
+    <title>Главная</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+    <body>
+        <header class="header">
+    <div class="header__inner p-lg-4">
+        <div class="row header__items">
+            <div class="col-lg-2 header__item">
+                <img src="images/logo.svg" alt="Логотип" class="header__logo logo">
+            </div>
+            <div class="d-flex justify-content-between col-lg-6 header__item">
+                <ul class="d-flex align-items-center justify-content-between col-lg-8 header__nav">
+                    <li>
+                        <a class="d-flex justify-content-center header__nav-link" href="#" id="catalog-btn">Каталог
+                            <img src="images/dropdown.svg" alt="" class="header__nav-link-dropicon ms-2" id="dropIconTog"></a>
+                    </li>
+                    <li>
+                        <a class="header__nav-link" href="#">Реализованные проекты</a>
+                    </li>
+                    <li><a class="header__nav-link" href="#">Сервис</a></li>
+                    <li><a class="header__nav-link" href="#">О компании</a></li>
+                    <li><a class="header__nav-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-center align-items-end col-lg-2 flex-lg-column header__item">
+                <a href="tel:89339336053" class="header__nav-phone">8-933-933-60-53</a>
+                <a href="" class="d-flex align-items-center header__nav-wa"><img src="images/wa.svg" alt="WhatsApp" class="me-1">Написать в WhatsApp</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between col-lg-2 header__item-connect-btn-inner">
+                <a href="#" class="btn btn--lg btn--stroke header__item-connect-btn">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+    <div class="catalog" id="catalog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-derevo.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Оборудование для деревообработки
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-beton.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Оборудование для производства бетона и бетонных
+                            изделий
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-stroy.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Строительное оборудование
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-selhoz.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Сельскохозяйственное оборудование
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-metall.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Оборудование для металлообработки
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-penourino.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Оборудование для нанесения пенополиуретанового
+                            уплотнения
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-eztruz.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Экструзионное оборудование
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-upakovka.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Упаковочное оборудование
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-food.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Пищевое оборудование
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 col-md-4 col-sm-6 mb-4">
+                    <a class="d-flex align-items-center justify-content-center catalog__item">
+                        <div class="col-lg-3 catalog__item-img me-lg-3">
+                            <img src="images/icon/catalog/icon-automat.svg">
+                        </div>
+                        <div class="catalog__item-text col-lg-9">
+                            Автоматизация производства
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        <!-- prettier-ignore -->
+        <main class="main">
+            <section class="hero__catalog mt-48">
+                <div class="bg-white hero__catalog-inner">
+                    <div class="container">
+                      
+                            <div class="row breadcrumbs">
+                                <div class="d-flex breadcrumbs__wrapper p-0">
+                                    <a href="/" class="breadcrumbs__link fs-14 fw-700">Главная</a>
+                                    <span class="d-flex align-items-center justify-content-center breadcrumbs__space mx-2"><img src="images/icon/dash.svg" alt=""></span>
+                                    <div class="text-gray fs-14 breadcrumbs__link">Каталог оборудования</div>
+                                </div>
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 p-0">
+                                <h2 class="col-lg-6 title-h2">
+                              Каталог оборудования
+                                </h2>
+                            </div>
+                        </div>
+            
+                        <div class="row center--md hero__catalog-items">
+                            <!----Верстка #1 JS----->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+    <div class="bg-black bg-noise br-24 footer__inner mx-16 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/logo-white.svg" alt="">
+                </div>
+                <div class="col-lg-3">
+                    <p class="text-white fs-22 fw-700">
+                        г. Барнаул, ул. Анатолия, д. 35а, оф.206
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="" class="hover text-white fs-22 fw-700 col-12">intehbox@mail.ru</a>
+                    <p class="col-12 text-white fs-14 fw-300">
+                        по любым вопросам
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="" class="hover text-white fs-22 fw-700">8-933-933-60-53</a>
+                    <a href="" class="d-flex align-items-center fs-14 fw-300 text-white"><img src="images/wa.svg" style="max-width: 22px; height: auto" class="me-1">Написать в WhatsApp</a>
+                </div>
+
+                <div class="col-lg-2">
+                    <a href="" class="text-white btn btn--lg btn--stroke">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <p class="text-white fs-32 fw-600 lh-32 mb-3">Каталог</p>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer__list">
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Оборудование для деревообработки</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Оборудование для производства бетона и бетонных
+                                изделий</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Строительное оборудование</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Сельскохозяйственное оборудование</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Оборудование для металлообработки</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Оборудование для нанесения пенополиуретанового
+                                уплотнения</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer__list">
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Экструзионное оборудование</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Упаковочное оборудование</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Пищевое оборудование</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-gray">Автоматизация производства</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 offset-3">
+                    <ul class="footer__list">
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-white">О компании</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-white">Реализованные проекты</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-white">Сервис</a>
+                        </li>
+                        <li class="footer__item mb-lg-3">
+                            <a href="" class="hover footer__link fs-16 fw-500 text-white">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="col-12 my-lg-5">
+                        <a href=""><img src="images/Social_VK.svg" alt=""></a>
+                        <a href="" class="px-2"><img src="images/Social_WhatsApp.svg" alt=""></a>
+                        <a href=""><img src="images/Social_Telegram.svg" alt=""></a>
+                    </div>
+                    <div class="col-12">
+                        <a href="#" class="hover text-gray fs-14">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 align-items-end mb--16">
+            <img src="images/inteh-footer.svg" alt="">
+        </div>
+    </div>
+</footer>
+ <script src="js/app.js"></script>
+<!-- <script src="js/sliders.js"></script> -->
+<!-- <script src="js/jq.js"></script> -->
+
+        <!-- prettier-ignore-end -->
+    </body>
+</html>

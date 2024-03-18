@@ -5156,12 +5156,20 @@ input:focus {
   color: #9298a6 !important;
 }
 
+.text-green {
+  color: #048159 !important;
+}
+
 .stroke-green {
   -webkit-text-stroke: 2px #048159;
 }
 
 .bg-black {
   background-color: #252525;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
 }
 
 .bg-noise {
@@ -5186,6 +5194,10 @@ input:focus {
 }
 
 .fs-22b {
+  font-size: 22px !important;
+}
+
+.fs-22 {
   font-size: 22px !important;
 }
 
@@ -5286,6 +5298,18 @@ input:focus {
   margin: 0 16px;
 }
 
+.mt-48 {
+  margin-top: 48px !important;
+}
+
+.mb-48 {
+  margin-bottom: 48px !important;
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
 .mb--16 {
   margin-bottom: -45px;
 }
@@ -5294,11 +5318,42 @@ input:focus {
   border-radius: 24px;
 }
 
+.br-20 {
+  border-radius: 20px;
+}
+
 .hover {
   transition: color 0.3s ease;
 }
 .hover:hover {
   color: #3bc069 !important;
+}
+
+.hide {
+  display: none;
+}
+
+.flip-180 {
+  transform: rotate(180deg);
+}
+
+.zi-10 {
+  z-index: 10;
+}
+
+.tt-u {
+  text-transform: uppercase;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .center--md {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /** БЕМ блоки используемые во всё проекте */
@@ -5441,7 +5496,7 @@ section {
   position: fixed;
   width: 100%;
   background-color: #ffffff;
-  z-index: 4;
+  z-index: 11;
 }
 .header__inner {
   padding: 16px 0;
@@ -5495,8 +5550,8 @@ section {
   left: -2px;
   top: 50%;
   transform: translateY(-50%);
-  width: 102%;
-  height: 80px;
+  width: calc(100% + 4px);
+  height: calc(100% - 48px);
   z-index: 2;
 }
 .catalog__item-img {
@@ -5687,6 +5742,7 @@ body {
 }
 
 .hero__pokazateli-item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -5696,6 +5752,17 @@ body {
   border-radius: 20px;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.hero__pokazateli-item::after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  transform: translateX(-50%);
+  width: calc(100% - 48px);
+  height: calc(100% + 4px);
+  z-index: 2;
 }
 
 .hero__project {
@@ -5756,10 +5823,23 @@ body {
 }
 
 .hero__catalog-item {
+  position: relative;
   max-width: 352px;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.5s ease;
+  border: 2px solid #ececf3;
+  transition: color 0.5s ease;
+}
+.hero__catalog-item::after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% + 4px);
+  height: calc(100% - 48px);
+  z-index: 2;
 }
 .hero__catalog-item .hero__catalog-item-prod-icon-hover {
   display: none;
@@ -5779,7 +5859,65 @@ body {
 .hero__catalog-item:hover .hero__catalog-item-prod-icon-un {
   display: none;
 }
+.hero__catalog-item:hover .hero__catalog-item::after {
+  background-color: transparent;
+}
+.hero__catalog-item:hover::after {
+  background-color: transparent;
+}
 .hero__catalog-item-arrow-icon img {
+  opacity: 0;
+}
+
+.hero__catalog-item-2 {
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #ececf3;
+  transition: color 0.2s ease;
+}
+.hero__catalog-item-2::after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% + 4px);
+  height: calc(100% - 48px);
+  z-index: 2;
+}
+.hero__catalog-item-2 .hero__catalog-item-prod-icon-hover {
+  display: none;
+}
+.hero__catalog-item-2:hover {
+  background-color: #282d3a;
+}
+.hero__catalog-item-2:hover h3 {
+  color: #3bc069;
+}
+.hero__catalog-item-2:hover .hover-catalog {
+  color: white !important;
+}
+.hero__catalog-item-2:hover .hover-catalog-btn {
+  color: white !important;
+  background-color: #3bc069;
+}
+.hero__catalog-item-2:hover .hero__catalog-item-arrow-icon img {
+  opacity: 1;
+}
+.hero__catalog-item-2:hover .hero__catalog-item-prod-icon-hover {
+  display: block;
+}
+.hero__catalog-item-2:hover .hero__catalog-item-prod-icon-un {
+  display: none;
+}
+.hero__catalog-item-2:hover .hero__catalog-item::after {
+  background-color: transparent;
+}
+.hero__catalog-item-2:hover::after {
+  background-color: transparent;
+}
+.hero__catalog-item-2-arrow-icon img {
   opacity: 0;
 }
 
@@ -5955,6 +6093,10 @@ body {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
+  padding-bottom: 16px;
+  transition: all 0.5s ease;
+  opacity: 0;
+  height: 0;
 }
 
 .faq__tab-q {
@@ -5970,5 +6112,10 @@ body {
 
 .faq__tab-open {
   padding-top: 24px;
+  opacity: 1;
+  height: auto;
+}
+.faq__tab-open p {
+  opacity: 1;
   height: auto;
 }

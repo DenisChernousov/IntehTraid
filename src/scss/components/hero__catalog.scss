@@ -10,13 +10,28 @@
     }
 }
 .hero__catalog-item {
+    position: relative;
     max-width: 352px;
     border-radius: 20px;
     cursor: pointer;
-    transition: all 0.5s ease;
+    border: 2px solid #ececf3;
+    transition: color 0.5s ease;
+    &::after {
+        content: '';
+        background-color: $inteh_white;
+        position: absolute;
+        left: -2px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc(100% + 4px);
+        height: calc(100% - 48px);
+        z-index: 2;
+    }
+
     .hero__catalog-item-prod-icon-hover {
         display: none;
     }
+
     &:hover {
         background-color: $inteh_gray_blue;
         h3 {
@@ -31,6 +46,68 @@
         .hero__catalog-item-prod-icon-un {
             display: none;
         }
+        .hero__catalog-item::after {
+            background-color: transparent;
+        }
+    }
+    &:hover::after {
+        background-color: transparent;
+    }
+    &-arrow-icon img {
+        opacity: 0;
+    }
+}
+
+.hero__catalog-item-2 {
+    position: relative;
+
+    cursor: pointer;
+    border: 2px solid #ececf3;
+    transition: color 0.2s ease;
+
+    &::after {
+        content: '';
+        background-color: $inteh_white;
+        position: absolute;
+        left: -2px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc(100% + 4px);
+        height: calc(100% - 48px);
+        z-index: 2;
+    }
+
+    .hero__catalog-item-prod-icon-hover {
+        display: none;
+    }
+
+    &:hover {
+        background-color: $inteh_gray_blue;
+        h3 {
+            color: $inteh_emerald;
+        }
+        .hover-catalog {
+            color: white !important;
+        }
+        .hover-catalog-btn {
+            color: white !important;
+            background-color: $inteh_emerald;
+        }
+        .hero__catalog-item-arrow-icon img {
+            opacity: 1;
+        }
+        .hero__catalog-item-prod-icon-hover {
+            display: block;
+        }
+        .hero__catalog-item-prod-icon-un {
+            display: none;
+        }
+        .hero__catalog-item::after {
+            background-color: transparent;
+        }
+    }
+    &:hover::after {
+        background-color: transparent;
     }
     &-arrow-icon img {
         opacity: 0;
@@ -200,6 +277,10 @@
         line-height: 24px;
         letter-spacing: 0%;
         text-align: left;
+        padding-bottom: 16px;
+        transition: all 0.5s ease;
+        opacity: 0;
+        height: 0;
     }
 }
 .faq__tab-q {
@@ -214,5 +295,10 @@
 }
 .faq__tab-open {
     padding-top: 24px;
+    opacity: 1;
     height: auto;
+    p {
+        opacity: 1;
+        height: auto;
+    }
 }

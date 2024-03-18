@@ -73,13 +73,13 @@ const catalog = [
 ];
 
 const catalogItems = catalog.map((item) => {
-    return `<a href="#" class="hero__catalog-item  p-lg-3 py-lg-4 me-lg-4  mb-lg-4 col-lg-3 "> 
-                      <div class="col-lg-12">
-                          <h3 class="hero__catalog-text tt-none col-lg-7">
+    return `<a href="#" class="hero__catalog-item  p-lg-3 py-lg-4 me-lg-4 me-sm-4 mb-lg-4 col-lg-3 col-md-4 cold-sm-12 "> 
+                      <div class="zi-10 col-lg-12">
+                          <h3 class="hero__catalog-text tt-none col-lg-7 mb-sm-4">
                               ${item.title}
                           </h3>
                       </div>
-                      <div class="col-lg-12 d-flex">
+                      <div class="zi-10 col-lg-12 d-flex">
                           <div class="hero__catalog-item-arrow-icon col-lg-6 d-flex align-items-end">
                               <img src="images/icon/arow-tuda-green.svg" />
                           </div>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', { 'title': 'Главная' })
+    <body>
+        @@include('html/header.html', {})
+
+        <!-- prettier-ignore -->
+        <main class="main">
+            <section class="hero__catalog mt-48">
+                <div class="hero__catalog-inner bg-white">
+                    <div class="container">
+                      
+                            <div class="breadcrumbs row">
+                                <div class="breadcrumbs__wrapper d-flex p-0 ">
+                                    <a href="/" class="breadcrumbs__link fs-14 fw-700">Главная</a>
+                                    <span class="breadcrumbs__space d-flex justify-content-center align-items-center mx-2"><img src="images/icon/dash.svg" alt=""></span>
+                                    <div class="breadcrumbs__link  fs-14 text-gray">Каталог оборудования</div>
+                                </div>
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 p-0  ">
+                                <h2 class="title-h2 col-lg-6 ">
+                              Каталог оборудования
+                                </h2>
+                            </div>
+                        </div>
+            
+                        <div class="hero__catalog-items center--md row">
+                            <!----Верстка #1 JS----->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @@include('html/footer.html', {}) @@include('html/script.html', {})
+        <!-- prettier-ignore-end -->
+    </body>
+</html>

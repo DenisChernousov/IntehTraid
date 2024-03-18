@@ -9,6 +9,9 @@
 .text-gray {
     color: #9298a6 !important;
 }
+.text-green {
+    color: #048159 !important;
+}
 .stroke-green {
     -webkit-text-stroke: 2px #048159;
 }
@@ -16,6 +19,9 @@
 
 .bg-black {
     background-color: $black;
+}
+.bg-white {
+    background-color: $white !important;
 }
 .bg-noise {
     background: url('../../images/noise.png'), #282d3a;
@@ -33,11 +39,15 @@
 .fs-20 {
     font-size: 20px !important;
 }
+
 .fs-20b {
     font-size: 20px !important;
     font-weight: 700;
 }
 .fs-22b {
+    font-size: 22px !important;
+}
+.fs-22 {
     font-size: 22px !important;
 }
 .fs-32 {
@@ -137,18 +147,57 @@
 .mx-16 {
     margin: 0 16px;
 }
+.mt-48 {
+    margin-top: 48px !important;
+}
+.mb-48 {
+    margin-bottom: 48px !important;
+}
+.mb-32 {
+    margin-bottom: 32px !important;
+}
 .mb--16 {
     margin-bottom: -45px;
 }
+
 //---------Бордеры
 .br-24 {
     border-radius: 24px;
 }
+.br-20 {
+    border-radius: 20px;
+}
+
 //-------Состояния
 
 .hover {
     transition: color 0.3s ease;
     &:hover {
         color: $emerald !important;
+    }
+}
+
+.hide {
+    display: none;
+}
+.flip-180 {
+    transform: rotate(180deg);
+}
+
+.zi-10 {
+    z-index: 10;
+}
+.tt-u {
+    text-transform: uppercase;
+}
+.w-100 {
+    width: 100%;
+}
+
+//Центровки
+.center--md {
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
     }
 }

@@ -158,6 +158,7 @@
     }
 }
 .hero__pokazateli-item {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -167,6 +168,17 @@
     border-radius: 20px;
     padding-top: 32px;
     padding-bottom: 32px;
+    &::after {
+        content: '';
+        background-color: $inteh_white;
+        position: absolute;
+        left: 50%;
+        top: -2px;
+        transform: translateX(-50%);
+        width: calc(100% - 48px);
+        height: calc(100% + 4px);
+        z-index: 2;
+    }
 }
 
 .hero__project {
