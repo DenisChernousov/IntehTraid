@@ -26,7 +26,9 @@
 .bg-noise {
     background: url('../../images/noise.png'), #282d3a;
 }
-
+.bg-gray {
+    background-color: #f6f6f9;
+}
 //---------Шрифты
 /////----Размеры
 
@@ -144,6 +146,19 @@
 .mb-160 {
     margin-bottom: 160px;
 }
+
+.mt-138 {
+    margin-top: 138px;
+}
+.mb-80 {
+    margin-bottom: 80px;
+}
+.mt-80 {
+    margin-top: 80px;
+}
+.pt-80 {
+    padding-top: 80px;
+}
 .mx-16 {
     margin: 0 16px;
 }
@@ -158,6 +173,12 @@
 }
 .mb--16 {
     margin-bottom: -45px;
+}
+.p-80 {
+    padding: 80px;
+}
+.mb-2prc {
+    margin-bottom: -2.5%;
 }
 
 //---------Бордеры

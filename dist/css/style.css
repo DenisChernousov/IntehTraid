@@ -5176,6 +5176,10 @@ input:focus {
   background: url("../../images/noise.png"), #282d3a;
 }
 
+.bg-gray {
+  background-color: #f6f6f9;
+}
+
 .fs-14 {
   font-size: 14px !important;
 }
@@ -5294,6 +5298,22 @@ input:focus {
   margin-bottom: 160px;
 }
 
+.mt-138 {
+  margin-top: 138px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
 .mx-16 {
   margin: 0 16px;
 }
@@ -5312,6 +5332,14 @@ input:focus {
 
 .mb--16 {
   margin-bottom: -45px;
+}
+
+.p-80 {
+  padding: 80px;
+}
+
+.mb-2prc {
+  margin-bottom: -2.5%;
 }
 
 .br-24 {
@@ -6118,4 +6146,48 @@ body {
 .faq__tab-open p {
   opacity: 1;
   height: auto;
+}
+
+.catalog-page {
+  position: relative;
+  z-index: 2;
+}
+
+.catalog-page__img {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  z-index: 5;
+}
+
+.catalog-page__img-2 {
+  position: absolute;
+  bottom: -21%;
+  right: -5%;
+  z-index: 1;
+}
+
+.help-msg {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 55;
+}
+
+.help-msg__close {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  cursor: pointer;
+  filter: invert(100);
+  transition: all 0.5s ease;
+  transform: rotate(45deg);
+}
+.help-msg__close:hover {
+  transform: rotate(-45deg);
+}
+
+.breadcrumbs__wrapper {
+  flex-wrap: wrap;
 }

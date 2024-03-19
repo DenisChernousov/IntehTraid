@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 .classList.remove('btn-reverse');
         }
     });
+    const modalClose = document.querySelector('.js-modal-close');
+
+    modalClose.addEventListener('click', () => {
+        document.querySelector('.js-help-msg-modal').classList.add('hide');
+    });
 });
 
 //////////////////////// это верстальщетские скрипты, что бы не плодить портянки

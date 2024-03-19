@@ -302,3 +302,43 @@
         height: auto;
     }
 }
+
+.catalog-page {
+    position: relative;
+    z-index: 2;
+}
+.catalog-page__img {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+
+    z-index: 5;
+}
+.catalog-page__img-2 {
+    position: absolute;
+    bottom: -21%;
+    right: -5%;
+    z-index: 1;
+}
+.help-msg {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 55;
+}
+.help-msg__close {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+    filter: invert(100);
+    transition: all 0.5s ease;
+    transform: rotate(45deg);
+    &:hover {
+        transform: rotate(-45deg);
+    }
+}
+.breadcrumbs__wrapper {
+    flex-wrap: wrap;
+}
